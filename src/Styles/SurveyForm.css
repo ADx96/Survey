@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: "open sans", helvetica, sans-serif;
+}
+
+header {
+  text-align: center;
+  height: 6vh;
+  margin-top: 20px;
+}
+.heading {
+  font-size: 30px;
+}
+
+@media (min-width: 1300px) {
+  section {
+    flex-direction: column;
+  }
+}
+h1 {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.title {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 17px;
+}
+.flex {
+  margin: 16px;
+  column-gap: 22px;
+  margin: 10px;
+  display: flex;
+}
+
+.submit {
+  text-align: center;
+}
+.sumbit-div {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#div134 {
+  margin-top: 30px;
+}
