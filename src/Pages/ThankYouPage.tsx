@@ -16,7 +16,6 @@ const ThankYouPage: React.FC = () => {
                   />
                 </h1>
                 <p>for Your Survey Submition</p>
-                <a href="index.html">Back to home</a>
                 <div className="clr"></div>
               </div>
               <div className="clr"></div>

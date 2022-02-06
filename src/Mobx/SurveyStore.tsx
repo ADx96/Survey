@@ -1,12 +1,10 @@
 import { makeAutoObservable, runInAction } from "mobx";
 import instance from "./Instance";
 
-export interface Questions {
-  Questions: [];
-}
-
 class SurveyStore {
   Questions: any[] = [];
+  Remarks: any[] = [];
+  Answers: any[] = [];
   isLoading = true;
   constructor() {
     makeAutoObservable(this);
@@ -31,7 +29,7 @@ class SurveyStore {
         QuestionData
       );
       runInAction(() => {
-        this.Questions = response.data;
+        this.Answers.push(response.data);
         this.isLoading = false;
       });
     } catch (error) {
@@ -46,7 +44,7 @@ class SurveyStore {
         QuestionData
       );
       runInAction(() => {
-        this.Questions = response.data;
+        this.Answers.push(response.data);
         this.isLoading = false;
       });
     } catch (error) {
@@ -61,7 +59,7 @@ class SurveyStore {
         QuestionData
       );
       runInAction(() => {
-        this.Questions = response.data;
+        this.Remarks.push(response.data);
         this.isLoading = false;
       });
     } catch (error) {

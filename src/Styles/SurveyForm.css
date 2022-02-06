@@ -30,8 +30,21 @@ h1 {
 .flex {
   margin: 16px;
   column-gap: 22px;
+  justify-content: center;
   margin: 10px;
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .flex {
+    display: inline-block;
+  }
+  .header-title {
+    margin-bottom: 30px;
+  }
+  .title {
+    text-align: left;
+  }
 }
 
 .submit {
@@ -45,4 +58,11 @@ h1 {
 
 #div134 {
   margin-top: 30px;
+}
+
+.alert-danger {
+  color: #842029;
+  background-color: #ce0b1c;
+  border-color: #ce0b1c;
+  text-align: center;
 }
